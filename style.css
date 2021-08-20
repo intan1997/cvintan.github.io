@@ -1,0 +1,150 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'roboto';
+	color: black ;
+}
+header{
+	height: 70px;
+	background-color: peachpuff;
+   	padding: 5px;
+}
+header h1 {
+	display: inline-block;
+	float:left ;
+	padding: 15px 24px;
+	text-transform: uppercase ;
+	font-size: 20px;
+}
+header h1 a:hover{
+	color: pink;
+}
+header ul {
+	float: right;
+}
+header ul li {
+	padding: 24px;
+	display: inline-block;
+}
+header ul li a:hover {
+	color: blue;
+}
+*{
+	text-decoration: none;
+}
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+.container: :after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.mobile-menu {
+	float: right;
+	display: none;
+	padding: 24px;
+}
+.mobile-menu:hover {
+	cursor: pointer;
+}
+#check {
+	display: none;
+}
+.sidebar {
+	position:fixed ;
+	top : 0;
+	bottom: 0;
+	left: -250px;
+	width:250px ;
+	background-color: rgba(16, 47, 80, .8);
+}
+.sidebar ul li a {
+	color: whitesmoke ;
+}
+.sidebar ul li {
+	padding: 24px;
+}
+.sidebar ul li:hover{
+	background-color: yellowgreen;
+}
+
+#check:checked ~ .sidebar{
+	left: 0;
+}
+.banner {
+	background-color: rgb(199, 173, 151);
+	padding: 50px 0;
+}
+section {
+	padding:50px 0 ;
+}
+.banner img {
+	width:130px ;
+	height:130px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-bottom:10px ;
+	
+}
+.banner h2,
+.banner p {
+	color: whitesmoke;
+}
+.banner h2 {
+	margin-bottom: 10px;
+}
+.banner p {
+	font-size:18px ;
+}
+.banner-left {
+	padding-left: 24px;
+}
+section h3 {
+	padding-bottom: 20px;
+	text-align: center;
+	margin: 20px;
+	position: relative;
+}
+section h3::before {
+	content: '';
+	display: block;
+	position: relative;
+	botton: 0;
+	width: 120px;
+	height: 1px;
+	background-color: darkblue;
+	left: calc(50% - 60px);
+
+}
+
+.kiri {
+	background-color: peru;
+	width: 40%;
+	height: 200px;
+	float:left;
+	margin-left: 50px;
+	margin: 30px;
+	text-align: center;
+	font-size: 25px;
+}
+.kanan {
+	background-color: rgb(139, 108, 76);
+	width: 40%;
+	height: 200px;
+	float:right;
+	margin-right: 50px;
+	margin: 30px;
+	text-align: center;
+	font-size: 20px;
+	
+}
+@media screen and (max-width: 768px) {
+	.mobile-menu {
+		display: block;
+	}
+	header ul {
+		display: none;
+	}
+}
